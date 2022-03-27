@@ -8,13 +8,13 @@ for(let i = 0; i<list.length; i++){
         }
         this.classList.add('active');
 
-        let datafilter = this.getAttribute('data-filter');
+        let categories = this.getAttribute('categories');
         for( let k = 0; k<itemBox.length; k++){
             itemBox[k].classList.add('hide');
             itemBox[k].classList.remove('active');
 
-            if(itemBox[k].getAttribute('data-item') == datafilter ||
-            datafilter == "all"){
+            if(itemBox[k].getAttribute('data-item') == categories ||
+            categories == "all"){
                 itemBox[k].classList.remove('hide');
                 itemBox[k].classList.add('active');
             }
