@@ -24,8 +24,9 @@ for (let i = 0; i < list.length; i++) {
   });
 }
 
-video = getElementsByTagName("video");
+`video = getElementsByTagName("video");
 function removeControls(video) {
   video.removeAttribute("controls");
 }
-window.onload = removeControls(video);
+window.onload = removeControls(video);`;
+
